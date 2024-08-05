@@ -1,0 +1,9 @@
+@import "header__wrapper.css";
+@import "header__logo.css";
+
+.header {
+	background-color: var(--header-color);
+	padding: 0 25px;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 1400px) 1fr;
+}

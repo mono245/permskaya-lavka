@@ -1,0 +1,16 @@
+@import "footer__wrapper.css";
+@import "footer__columns.css";
+@import "footer__column.css";
+@import "footer__column-title.css";
+@import "footer__column-list.css";
+@import "footer__column-list_sm.css";
+@import "footer__copy-and-logo.css";
+@import "footer__copy.css";
+@import "footer__logo.css";
+
+.footer {   
+    background-color: var(--footer-color);
+    padding: 0 30px;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 1400px) 1fr;
+}

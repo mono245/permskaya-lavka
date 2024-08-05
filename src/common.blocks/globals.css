@@ -1,0 +1,29 @@
+:root {
+	--main-text-color: #000;
+	--main-title-color: #3d251e;
+	--main-color: #fff;
+
+	--header-color: #f4d4b3;
+	--header-dark-color: #c9ae93;
+	--header-darker-color: #a38d77;
+	--header-text-color: #3d251e;
+	--header-dark-text-color: #291914;
+	--header-mobile-menu-opacity: 0.9;
+	--header-active-mobile-menu-opacity: 0.8;
+	--header-min-height: 100px;
+
+	--category-title-color: #dec4a9;
+
+	--product-border-color: #cfb19d;
+	--product-bg-color: #f4d4b3;
+	--product-title-color: #3d251e;
+	--product-details-bg-color: #cfb19d;
+	--product-details-bg-darker-color: #ad9382;
+	--product-details-link-color: #3d251e;
+
+	--footer-color: #77584c;
+	--footer-subtitle-color: #f7ddcb;
+	--footer-text-color: #cfb19d;
+	--footer-light-text-color: #f8d9c4;
+	--footer-min-height: 70px;
+}

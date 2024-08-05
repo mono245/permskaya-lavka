@@ -1,0 +1,6 @@
+.categories__category-link-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}

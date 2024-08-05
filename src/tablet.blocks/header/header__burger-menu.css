@@ -1,0 +1,16 @@
+.header__burger-menu {
+    display: block !important;  /* using important to override inline display: none */
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-100%);
+    transition: all 0.8s ease 0s;
+    background-color: rgba(0, 0, 0, var(--header-mobile-menu-opacity));
+}
+
+.header__burger-menu.opened {
+    transform: translateY(0);
+}

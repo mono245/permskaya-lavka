@@ -1,0 +1,4 @@
+.wrapper__header {
+	min-height: var(--header-min-height);
+	height: auto;
+}

@@ -1,0 +1,12 @@
+@import "content__wrapper.css";
+@import "content__title.css";
+@import "content__text.css";
+@import "content__search-bar.css";
+
+.content {
+    flex: 1 1 auto;
+    padding: 0 25px;
+    background-color: var(--main-color);
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 1400px) 1fr;
+}

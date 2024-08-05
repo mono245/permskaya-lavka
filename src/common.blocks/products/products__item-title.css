@@ -1,0 +1,8 @@
+.products__item-title {
+	margin: 15px 0;
+
+	font-size: 25px;
+	color: var(--product-title-color);
+	font-weight: 600;
+	text-align: center;
+}

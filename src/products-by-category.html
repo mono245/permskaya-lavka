@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="project.css">
+	<link rel="icon" href="common.blocks/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Продукты {category}</title>
+</head>
+<body class="page">
+	<p class="on-ie-text" style="display: none;">
+		Извините, но мы не поддерживаем Internet Explorer. 
+		Microsoft прекратила поддержку IE в 2021 году. 
+		Пожалуйста, используйте другой браузер.
+	</p>
+	<div class="wrapper">
+		<header class="header wrapper__header">
+			<div class="header__wrapper">
+				<a href="index.html" class="header__logo">
+					<img src="common.blocks/header/logo.svg" alt="лого">
+				</a>
+				<nav class="header__menu" style="display: none;">
+					<a href="about.html" class="header__menu-item">
+						<span class="header__menu-item-text">О нас</span>
+					</a>
+					<a href="catalog.html" class="header__menu-item">
+						<span class="header__menu-item-text">Каталог</span>
+					</a>
+					<a href="#" class="header__menu-item">
+						<span class="header__menu-item-text">Новости</span>
+					</a>
+				</nav>
+				<button class="header__burger-menu-button" style="display: none;">
+					<img src="tablet.blocks/header/burger-menu.svg" alt="меню">
+				</button>
+				<nav class="header__burger-menu" style="display: none;">
+					<nav class="header__burger-menu-menu">
+						<a href="about.html" class="header__burger-menu-link">О нас</a>
+						<a href="catalog.html" class="header__burger-menu-link">Каталог</a>
+						<a href="#" class="header__burger-menu-link">Новости</a>
+					</nav>
+				</nav>
+			</div>
+		</header>
+		<main class="content">
+			<div class="content__wrapper">
+				<form class="search-bar content__search-bar" action="#" method="GET">
+					<div class="search-bar__wrapper">
+						<input type="text"
+								name="query"
+								class="search-bar__input"
+								placeholder="Поиск по товарам">
+						<button class="search-bar__button" type="submit">
+							<img src="common.blocks/search-bar/search-icon.svg" alt="искать">
+						</button>
+					</div>
+				</form>
+				<div style="clear: both;"></div>
+				<section class="products">
+					<h1 class="products__title">
+						Продукты по категории '{category}'
+					</h1>			
+					<div class="products__body">
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 1</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 2</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 3</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 4</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 5</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 6</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 7</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 8</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 9</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+						<article class="products__item">
+							<div class="products__item-image">
+								<picture>
+									<source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+									<source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+									<img src="common.blocks/categories/image-filler.jpg" alt="">
+								</picture>
+							</div>
+							<h3 class="products__item-title">Продукт 10</h3>
+							<button class="products__details-button">
+								<a href="#">Подробнее</a>
+							</button>
+						</article>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer wrapper__footer">
+			<div class="footer__wrapper">
+				<div class="footer__columns">
+					<div class="footer__column">
+						<h5 class="footer__column-title">КОМПАНИЯ</h5>
+						<ul class="footer__column-list">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="#">Связаться с нами</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h5 class="footer__column-title">ПРОДУКЦИЯ</h5>	
+						<ul class="footer__column-list">
+							<li><a href="catalog.html">Каталог</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h5 class="footer__column-title">СОЦИАЛЬНЫЕ СЕТИ</h5>
+						<ul class="footer__column-list footer__column-list_sm">
+							<li>
+								<a href="https://vk.com/permlavkazakamsk" title="VK">
+									<img src="common.blocks/footer/vk-logo.svg" alt="ВК">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copy-and-logo">
+					<a href="index.html" class="footer__logo">
+						<img src="common.blocks/footer/logo.svg" alt="лого">
+					</a>
+					<p class="footer__copy">Copyright &copy; 2023 Пермская лавка</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="common.blocks/detect-ie.js"></script>
+	<script type="module" src="project.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.wrapper__footer {
+    min-height: var(--footer-min-height);
+    height: 100%;
+}

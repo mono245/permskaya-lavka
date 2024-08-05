@@ -1,0 +1,13 @@
+.search-bar__wrapper {
+	border: 3px solid var(--footer-text-color);
+	border-radius: 10px;
+	width: auto;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	transition: border-color 0.3s ease 0s;
+}
+
+.search-bar__wrapper:has(> .search-bar__input:focus) {
+	border-color: var(--footer-color);
+}

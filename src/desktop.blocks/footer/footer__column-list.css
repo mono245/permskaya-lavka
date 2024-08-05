@@ -1,0 +1,3 @@
+.footer__column-list li a:hover {
+    color: var(--footer-light-text-color);
+}

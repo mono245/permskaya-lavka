@@ -1,0 +1,4 @@
+.content__wrapper {
+    grid-column: 2 / 3;
+    padding: 25px 0;
+}

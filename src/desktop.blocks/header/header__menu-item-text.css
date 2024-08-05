@@ -1,0 +1,9 @@
+.header__menu-item-text {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.header__menu-item-text:not(.header__menu-item_selected .header__menu-item-text) {
+	color: var(--header-text-color);
+}

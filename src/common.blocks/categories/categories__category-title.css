@@ -1,0 +1,7 @@
+.categories__category-title {
+    position: absolute;
+    z-index: 1;
+    color: var(--category-title-color);
+    font-size: 25px;
+    font-weight: 700;
+}

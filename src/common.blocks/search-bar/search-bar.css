@@ -1,0 +1,8 @@
+@import "search-bar__wrapper.css";
+@import "search-bar__input.css";
+@import "search-bar__button.css";
+
+.search-bar {
+    float: right;
+    width: 50%;
+}

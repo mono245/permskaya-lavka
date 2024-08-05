@@ -1,0 +1,5 @@
+.footer__copy-and-logo {
+    display: flex;
+    max-height: 130px;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+.footer__wrapper {
+    grid-column: 2 / 3;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,9 @@
+@import "wrapper__header.css";
+@import "wrapper__footer.css";
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	color: var(--text-color);
+}

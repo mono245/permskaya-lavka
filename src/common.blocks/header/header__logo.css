@@ -1,0 +1,12 @@
+.header__logo {
+	display: inline-block;
+	width: 95px;
+	height: 95px;
+}
+
+.header__logo img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;	
+}

@@ -1,0 +1,6 @@
+.categories__title {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+    color: var(--main-title-color);
+}

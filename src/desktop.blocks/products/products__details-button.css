@@ -1,0 +1,3 @@
+.products__details-button:hover {
+	background-color: var(--product-details-bg-darker-color);
+}

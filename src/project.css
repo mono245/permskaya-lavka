@@ -1,0 +1,28 @@
+/* common */
+@import "common.blocks/nullstyle.css";
+@import "common.blocks/globals.css";
+@import "common.blocks/page/page.css";
+@import "common.blocks/wrapper/wrapper.css";
+@import "common.blocks/header/header.css";
+@import "common.blocks/content/content.css";
+@import "common.blocks/footer/footer.css";
+
+/* common additional */
+@import "common.blocks/search-bar/search-bar.css";
+@import "common.blocks/categories/categories.css";
+@import "common.blocks/products/products.css";
+
+/* desktop */
+@import "desktop.blocks/header/header.css" screen and (min-width: 921px);
+@import "desktop.blocks/footer/footer.css" screen and (min-width: 950px);
+
+/* desktop additional */
+@import "desktop.blocks/products/products.css" screen and (min-width: 710px);
+
+/* mobile && tablet */
+@import "tablet.blocks/header/header.css" screen and (max-width: 920px);
+@import "tablet.blocks/footer/footer.css" screen and (max-width: 1200px);
+@import "mobile.blocks/footer/footer.css" screen and (max-width: 710px);
+
+/* mobile && tablet additional */
+@import "tablet.blocks/search-bar/search-bar.css" screen and (max-width: 700px);
