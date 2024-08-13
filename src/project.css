@@ -11,6 +11,7 @@
 @import "common.blocks/search-bar/search-bar.css";
 @import "common.blocks/categories/categories.css";
 @import "common.blocks/products/products.css";
+@import "common.blocks/detailed-product/detailed-product.css";
 
 /* desktop */
 @import "desktop.blocks/header/header.css" screen and (min-width: 921px);

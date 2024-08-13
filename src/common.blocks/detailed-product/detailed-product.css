@@ -1,0 +1,10 @@
+@import "detailed-product__image.css";
+@import "detailed-product__info.css";
+@import "detailed-product__title.css";
+@import "detailed-product__text.css";
+
+.detailed-product {
+    display: flex;
+    justify-content: space-between;
+
+}

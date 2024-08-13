@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('head/head.html', {'title': 'permskaya-lavka-base-page'})
+<body class="page">
+	<p class="on-ie-text" style="display: none;">
+		Извините, но мы не поддерживаем Internet Explorer. 
+		Microsoft прекратила поддержку IE в 2021 году. 
+		Пожалуйста, используйте другой браузер.
+	</p>
+	<div class="wrapper">
+		@@include('header/header.html')
+		<main class="content">
+			<div class="content__wrapper">
+				<!-- ... -->
+			</div>
+		</main>
+		@@include('footer/footer.html')
+	</div>
+	<script src="common.blocks/detect-ie.js"></script>
+	<script type="module" src="project.js"></script>
+</body>
+</html>

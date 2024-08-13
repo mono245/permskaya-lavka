@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('common.blocks/head/head.html', {'title': 'Связаться с нами'})
+<body class="page">
+	<p class="on-ie-text" style="display: none;">
+		Извините, но мы не поддерживаем Internet Explorer. 
+		Microsoft прекратила поддержку IE в 2021 году. 
+		Пожалуйста, используйте другой браузер.
+	</p>
+	<div class="wrapper">
+		@@include('common.blocks/header/header.html')
+		<main class="content">
+			<div class="content__wrapper">
+				<h1 class="content__title">Cвязаться с нами.</h1>
+                <address class="content__text">
+                    <p>Мы находимся по адресу {address}.</p>
+                    <p>Если у вас есть вопросы касаемо товара, вы можете написать нам в 
+                        <a href="#">ВК</a>.
+                    </p>
+                    <p>
+                        Если же у вас есть вопросы касаемо технической части сайта, 
+                        можете написать нам в <a href="https://t.me/o0ka1">телеграмм</a>.
+                    </p>
+                </address>
+			</div>
+		</main>
+		@@include('common.blocks/footer/footer.html')
+	</div>
+	<script src="common.blocks/detect-ie.js"></script>
+	<script type="module" src="project.js"></script>
+</body>
+</html>

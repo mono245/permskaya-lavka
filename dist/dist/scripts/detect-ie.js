@@ -1,0 +1,1 @@
+function isBrowserIE(){return!!window.document.documentMode}function onIEActions(){var e=document.getElementsByClassName("on-ie-text")[0],t=document.getElementsByClassName("wrapper")[0],n=document.getElementsByTagName("body")[0];e.style.display="block",e.style.fontSize="25px",e.style.lineHeight="1.4",t.style.display="none",n.style.padding="35px"}

@@ -20,12 +20,12 @@ export function toggleMenuItems() {
 
 function closeMenu() {
     burgerMenuElement.classList.remove("opened");
-    burgerMenuImage.src = "tablet.blocks/header/burger-menu.svg";
+    burgerMenuImage.src = "img/burger-menu.svg";
     isBurgerMenuOpened = false;
 }
 
 function openMenu() {
     burgerMenuElement.classList.add("opened")
-    burgerMenuImage.src = "tablet.blocks/header/close-cross.svg";
+    burgerMenuImage.src = "img/close-cross.svg";
     isBurgerMenuOpened = true;
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('common.blocks/head/head.html', {'title': 'Вся продукция'})
+<body>
+    @@include('common.blocks/header/header.html')
+    <main class="content">
+        <div class="content__wrapper">
+            <form class="search-bar content__search-bar" action="#" method="GET">
+                <div class="search-bar__wrapper">
+                    <input type="text"
+                            name="query"
+                            class="search-bar__input"
+                            placeholder="Поиск по товарам">
+                    <button class="search-bar__button" type="submit">
+                        <img src="common.blocks/search-bar/search-icon.svg" alt="искать">
+                    </button>
+                </div>
+            </form>
+            <div style="clear: both;"></div>
+            <section class="products">
+                <h1 class="products__title">
+                    Вся продукция
+                </h1>			
+                <div class="products__body">
+                    @@for (let i = 1; i < 151; i++) {
+                        <article class="products__item">
+                            <div class="products__item-image">
+                                <picture>
+                                    <source srcset="common.blocks/categories/image-filler.webp" type="image/webp">
+                                    <source srcset="common.blocks/categories/image-filler.jpg" type="image/jpeg">
+                                    <img src="common.blocks/categories/image-filler.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h3 class="products__item-title">Продукт `+i+`</h3>
+                            <button class="products__details-button">
+                                <a href="product-details.html">Подробнее</a>
+                            </button>
+                        </article>
+                    }
+                </div>
+            </section>
+        </div>
+    </main>
+    @@include('common.blocks/footer/footer.html')
+</body>
+</html>

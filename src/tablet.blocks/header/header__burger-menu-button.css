@@ -1,8 +1,9 @@
 .header__burger-menu-button {
     display: block !important;  /* using important to override inline display none */
     background-color: rgba(0, 0, 0, 0);
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
+    padding: 3px 0;
     position: relative;
     z-index: 100;
 }
