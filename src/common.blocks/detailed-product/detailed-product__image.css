@@ -1,7 +1,8 @@
 .detailed-product__image {
     margin: 0 20px 0 0;
-    width: 500px;
-    height: 300px;
+    width: 35%;
+    min-width: 400px;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     overflow: hidden;
 }

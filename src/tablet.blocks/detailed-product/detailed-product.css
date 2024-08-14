@@ -1,0 +1,6 @@
+@import "detailed-product__image.css";
+
+.detailed-product {
+    flex-direction: column;
+    align-items: center;
+}

@@ -27,3 +27,5 @@
 
 /* mobile && tablet additional */
 @import "tablet.blocks/search-bar/search-bar.css" screen and (max-width: 700px);
+@import "tablet.blocks/detailed-product/detailed-product.css" screen and (max-width: 950px);
+@import "mobile.blocks/detailed-product/detailed-product.css" screen and (max-width: 600px);
