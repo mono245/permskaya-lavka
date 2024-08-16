@@ -1,0 +1,3 @@
+.footer__column-item:hover a {
+    color: var(--footer-light-text-color);
+}

@@ -1,6 +1,7 @@
 /* common */
 @import "common.blocks/nullstyle.css";
 @import "common.blocks/globals.css";
+@import "common.blocks/fonts.css";
 @import "common.blocks/page/page.css";
 @import "common.blocks/wrapper/wrapper.css";
 @import "common.blocks/header/header.css";

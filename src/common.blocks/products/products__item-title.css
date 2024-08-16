@@ -1,7 +1,9 @@
 .products__item-title {
-	margin: 15px 0;
+	margin: 0.9375rem 0;
+	padding: 0 .25rem;
 
-	font-size: 25px;
+	font-size: 1.5625rem;
+	line-height: 1.1;
 	color: var(--product-title-color);
 	font-weight: 600;
 	text-align: center;

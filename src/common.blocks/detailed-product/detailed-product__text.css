@@ -1,8 +1,8 @@
 .detailed-product__text {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
 .detailed-product__text p {
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625rem 0;
 }

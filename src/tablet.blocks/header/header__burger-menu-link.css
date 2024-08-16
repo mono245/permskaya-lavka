@@ -1,8 +1,8 @@
 .header__burger-menu-link {
     color: var(--header-dark-color);
-    font-size: 35px;
+    font-size: 2.125rem;
     padding: 15px;
-    margin: 0 0 40px 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .header__burger-menu-link:active {

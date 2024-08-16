@@ -1,5 +1,6 @@
 .footer__column-title {
     color: var(--footer-subtitle-color);
-    font-size: 24px;
-    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0 0.875rem 0;
 }

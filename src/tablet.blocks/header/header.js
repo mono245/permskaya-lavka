@@ -1,7 +1,7 @@
 export let burgerMenuButton = document.querySelector(".header__burger-menu-button");
 
 let burgerMenuElement = document.querySelector(".header__burger-menu");
-let burgerMenuImage = burgerMenuButton.firstElementChild;
+let burgerMenuImage = document.querySelector(".header__burger-menu-button img");
 let burgerMenuItems = document.querySelectorAll(".header__burger-menu-link");
 
 let isBurgerMenuOpened = false;
@@ -25,7 +25,7 @@ function closeMenu() {
 }
 
 function openMenu() {
-    burgerMenuElement.classList.add("opened")
+    burgerMenuElement.classList.add("opened");
     burgerMenuImage.src = "img/close-cross.svg";
     isBurgerMenuOpened = true;
 }

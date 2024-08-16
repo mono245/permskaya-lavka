@@ -36,9 +36,6 @@ html {
   height: 100%;
   width: 100%;
   line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
   text-size-adjust: 100%
 }
 button,
@@ -86,7 +83,7 @@ h6 {
   --header-dark-text-color: #291914;
   --header-mobile-menu-opacity: 0.9;
   --header-active-mobile-menu-opacity: 0.8;
-  --category-title-color: #dec4a9;
+  --category-title-color: #e9d0b6;
   --product-border-color: #cfb19d;
   --product-bg-color: #f4d4b3;
   --product-title-color: #3d251e;
@@ -99,8 +96,36 @@ h6 {
   --footer-light-text-color: #f8d9c4;
   --footer-min-height: 70px
 }
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype')
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype')
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype')
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype')
+}
 body {
-  font-family: monospace
+  font-family: Montserrat
 }
 .wrapper__header {
   height: 65px
@@ -141,21 +166,24 @@ body {
 }
 .content__wrapper {
   grid-column: 2/3;
-  padding: 25px 0
+  padding: 24px 0
 }
 .content__title {
-  font-size: 37px;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 22px 0;
+  margin: 0 0 1.125rem 0;
   color: var(--main-title-color)
 }
 .content__text {
-  font-size: 20px;
+  font-size: 1.125rem;
   color: var(--main-text-color)
 }
 .content__text p {
-  margin: 0 0 16px 0;
-  line-height: 1.2
+  margin: 0 0 1rem 0;
+  line-height: 1.4
+}
+.content__text p:last-child {
+  margin-bottom: 0
 }
 .content__search-bar {
   margin: 0 0 45px 0
@@ -184,34 +212,35 @@ body {
 }
 .footer__column-title {
   color: var(--footer-subtitle-color);
-  font-size: 24px;
-  margin: 0 0 15px 0
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 0 .875rem 0
 }
-.footer__column-list li a {
-  color: var(--footer-text-color);
-  font-size: 19px;
-  transition: all .2s ease 0s
+.footer__column-item {
+  margin: 0 0 .5rem 0
 }
-.footer__column-list li a:active {
-  color: var(--footer-light-text-color)
-}
-.footer__column-list li {
-  margin: 0 0 7px 0
-}
-.footer__column-list li:last-child {
+.footer__column-item:last-child {
   margin: 0
 }
-.footer__column-list_sm {
-  display: flex
+.footer__column-item a {
+  color: var(--footer-text-color);
+  font-size: 1.125rem;
+  transition: all .2s ease 0s
 }
-.footer__column-list_sm li {
-  margin: 0 7px 0 0;
+.footer__column-item a:active {
+  color: var(--footer-light-text-color)
+}
+.footer__column-list_sm .footer__column-item {
+  margin: 0 8px 0 0;
   width: 40px;
   height: 40px
 }
-.footer__column-list_sm li a img {
+.footer__column-list_sm .footer__column-item a img {
   width: 100%;
   height: 100%
+}
+.footer__column-list_sm {
+  display: flex
 }
 .footer__copy-and-logo {
   display: flex;
@@ -221,7 +250,7 @@ body {
 .footer__copy {
   color: #f7ddcb;
   line-height: 1.2;
-  font-size: 18px
+  font-size: 1.125rem
 }
 .footer__logo {
   display: inline-block;
@@ -256,10 +285,10 @@ body {
   width: 100%;
   position: relative;
   z-index: 1;
-  font-size: 28px
+  font-size: 1.625rem
 }
 .search-bar__input::placeholder {
-  color: rgba(119,119,119,.6)
+  color: #77777799
 }
 .search-bar__button {
   width: 44px!important;
@@ -276,9 +305,9 @@ body {
   width: 50%
 }
 .categories__title {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 35px 0;
+  margin: 0 0 2rem 0;
   color: var(--main-title-color)
 }
 .categories__body {
@@ -315,13 +344,13 @@ body {
   position: absolute;
   z-index: 1;
   color: var(--category-title-color);
-  font-size: 25px;
+  font-size: 1.625rem;
   font-weight: 700
 }
 .products__title {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 35px 0;
+  margin: 0 0 2rem 0;
   line-height: 1.15;
   color: var(--main-title-color)
 }
@@ -349,15 +378,17 @@ body {
   height: 100%
 }
 .products__item-title {
-  margin: 15px 0;
-  font-size: 25px;
+  margin: .9375rem 0;
+  padding: 0 .25rem;
+  font-size: 1.5625rem;
+  line-height: 1.1;
   color: var(--product-title-color);
   font-weight: 600;
   text-align: center
 }
 .products__details-button {
-  padding: 8px;
-  font-size: 15px;
+  padding: .5rem;
+  font-size: 1rem;
   background-color: var(--product-details-bg-color);
   transition: all .2s ease 0s
 }
@@ -383,17 +414,17 @@ body {
   max-width: 700px
 }
 .detailed-product__title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--product-title-color);
-  margin: 0 0 18px 0
+  margin: 0 0 1.125rem 0
 }
 .detailed-product__text {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.4
 }
 .detailed-product__text p {
-  margin: 0 0 10px 0
+  margin: 0 0 .625rem 0
 }
 .detailed-product {
   display: flex;
@@ -425,20 +456,25 @@ body {
     color: var(--header-dark-text-color)
   }
   .header__menu-item-text {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
     letter-spacing: 2px
   }
-  .header__menu-item-text:not(.header__menu-item_selected.header__menu-item-text) {
+  .header__menu-item-text {
+    color: var(--header-text-color)
+  }
+  .header__menu-item_selected .header__menu-item-text {
+    color: var(--header-color)
+  }
+  .header__menu-item:hover .header__menu-item-text {
     color: var(--header-text-color)
   }
   .header__menu-item_selected {
-    background-color: var(--header-darker-color);
-    color: var(--header-color)
+    background-color: var(--header-darker-color)
   }
 }
 @media screen and (min-width:950px) {
-  .footer__column-list li a:hover {
+  .footer__column-item:hover a {
     color: var(--footer-light-text-color)
   }
 }
@@ -478,8 +514,6 @@ body {
     height: 100%
   }
   .header__burger-menu-menu {
-    position: fixed;
-    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -489,9 +523,9 @@ body {
   }
   .header__burger-menu-link {
     color: var(--header-dark-color);
-    font-size: 35px;
+    font-size: 2.125rem;
     padding: 15px;
-    margin: 0 0 40px 0
+    margin: 0 0 2.5rem 0
   }
   .header__burger-menu-link:active {
     background-color: rgba(0,0,0,var(--header-active-mobile-menu-opacity));

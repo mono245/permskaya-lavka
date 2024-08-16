@@ -1,6 +1,6 @@
 .detailed-product__title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--product-title-color);
-    margin: 0 0 18px 0;
+    margin: 0 0 1.125rem 0;
 }

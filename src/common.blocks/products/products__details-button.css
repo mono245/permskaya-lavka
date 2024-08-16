@@ -1,6 +1,6 @@
 .products__details-button {
-	padding: 8px;
-	font-size: 15px;
+	padding: .5rem;
+	font-size: 1rem;
 	background-color: var(--product-details-bg-color);
 	transition: all 0.2s ease 0s;
 }
