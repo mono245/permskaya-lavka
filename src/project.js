@@ -4,11 +4,17 @@ import {
 import { markSelectedMenuItem } from "./desktop.blocks/header/header.js";
 
 burgerMenuButton.addEventListener("click", event => {
-    toggleMenu();
     event.preventDefault();
-    event.stopPropagation();
+    toggleMenu();
 });
-burgerMenuButton.addEventListener("touchend", toggleMenu);
+burgerMenuButton.addEventListener("touchstart", event => {
+    event.preventDefault();
+
+    burgerMenuButton.ontouchend = () => {
+        toggleMenu();
+        burgerMenuButton.ontouchend = null;
+    }
+});
 toggleMenuItems();
 
 markSelectedMenuItem();

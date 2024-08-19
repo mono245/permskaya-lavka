@@ -1,3 +1,7 @@
-body {
-	font-family: Montserrat;
+.page {
+	font-family: Montserrat, monospace;
+}
+
+.page.no-scroll {
+	overflow: hidden;
 }

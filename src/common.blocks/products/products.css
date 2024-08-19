@@ -3,4 +3,5 @@
 @import "products__item.css";
 @import "products__item-image.css";
 @import "products__item-title.css";
-@import "products__details-button.css";
+@import "products__details-link.css";
+@import "products__details-text.css";

@@ -8,8 +8,10 @@ let isBurgerMenuOpened = false;
 
 export function toggleMenu() {
     if (isBurgerMenuOpened) {
+        enableScroll();
         closeMenu();
     } else {
+        disableScroll();
         openMenu();
     }
 }
@@ -28,4 +30,20 @@ function openMenu() {
     burgerMenuElement.classList.add("opened");
     burgerMenuImage.src = "img/close-cross.svg";
     isBurgerMenuOpened = true;
+}
+
+function disableScroll() {
+    let bodyClassList = document.body.classList;
+
+    if (!bodyClassList.contains("no-scroll")) {
+        bodyClassList.add("no-scroll");
+    }
+}
+
+function enableScroll() {
+    let bodyClassList = document.body.classList;
+
+    if (bodyClassList.contains("no-scroll")) {
+        bodyClassList.remove("no-scroll");
+    }
 }

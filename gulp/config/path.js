@@ -20,6 +20,7 @@ export default {
                 filename: "project.js"
             },
             scripts: `${productionBuildFolder}/scripts/`,
+            fonts: `${productionBuildFolder}/fonts/`,
             images: `${productionBuildFolder}/img/`
         },
         build: {
@@ -33,6 +34,7 @@ export default {
                 filename: "project.js"
             },
             scripts: `${devBuildFolder}/scripts/`,
+            fonts: `${devBuildFolder}/fonts/`,
             images: `${devBuildFolder}/img/`
         }
     },
@@ -41,6 +43,7 @@ export default {
         css: `${srcFolder}/project.css`,
         js: `${srcFolder}/project.js`,
         scripts: `${srcFolder}/common.blocks/*.js`,
+        fonts: `${srcFolder}/fonts/**/*.{ttf,woff,woff2}`,
         images: `${srcFolder}/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`
     },
     watch: {

@@ -17,6 +17,7 @@ import { css } from "./gulp/tasks/css.js";
 import { js } from "./gulp/tasks/js.js";
 import { scripts } from "./gulp/tasks/scripts.js";
 import { images } from "./gulp/tasks/images.js";
+import { fonts } from "./gulp/tasks/fonts.js";
 import { reset } from "./gulp/tasks/reset.js";
 
 function watcher() {
@@ -27,7 +28,7 @@ function watcher() {
     gulp.watch(path.watch.scripts, scripts)
 }
 
-const mainTasks = gulp.parallel(html, css, js, scripts, images);
+const mainTasks = gulp.parallel(html, css, js, scripts, images, fonts);
 
 const dev = gulp.series(reset, mainTasks, watcher);
 const build = gulp.series(reset, mainTasks);
