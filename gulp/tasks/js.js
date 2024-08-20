@@ -12,8 +12,5 @@ export const js = () => {
                 filename: "project.js"
             }
         }))
-        .pipe(app.plugins.if(app.isDev,
-            app.gulp.dest(app.path.dist.build.js.path),
-            app.gulp.dest(app.path.dist.dist.js.path)
-        ));
+        .pipe(app.plugins.destDependOnMode("js"));
 };

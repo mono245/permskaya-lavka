@@ -18,8 +18,5 @@ export const html = () => {
                 removeComments: true
             })
         ))
-        .pipe(app.plugins.if(app.isDev,
-            app.gulp.dest(app.path.dist.build.html),
-            app.gulp.dest(app.path.dist.dist.html)
-        ));
+        .pipe(app.plugins.destDependOnMode("html"));
 };

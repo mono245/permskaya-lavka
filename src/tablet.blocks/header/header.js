@@ -33,17 +33,18 @@ function openMenu() {
 }
 
 function disableScroll() {
-    let bodyClassList = document.body.classList;
+    let scrollTop = window.scrollY || window.pageYOffset;
+    let scrollLeft = window.scrollX || window.pageXOffset;
 
-    if (!bodyClassList.contains("no-scroll")) {
-        bodyClassList.add("no-scroll");
-    }
+    window.onscroll = () => {
+        window.scrollTo({
+            top: scrollTop,
+            left: scrollLeft,
+            behavior: "instant"
+        });
+    };
 }
 
 function enableScroll() {
-    let bodyClassList = document.body.classList;
-
-    if (bodyClassList.contains("no-scroll")) {
-        bodyClassList.remove("no-scroll");
-    }
+    window.onscroll = null;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('common.blocks/head/head.html', {'title': 'Вся продукция'})
-<body>
+<body class="page">
     @@include('common.blocks/header/header.html')
     <main class="content">
         <div class="content__wrapper">
@@ -42,5 +42,7 @@
         </div>
     </main>
     @@include('common.blocks/footer/footer.html')
+    <script src="common.blocks/detect-ie.js"></script>
+	<script type="module" src="project.js"></script>
 </body>
 </html>

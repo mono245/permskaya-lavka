@@ -127,9 +127,6 @@ h6 {
 .page {
   font-family: Montserrat,monospace
 }
-.page.no-scroll {
-  overflow: hidden
-}
 .wrapper__header {
   height: 65px
 }
@@ -182,7 +179,7 @@ h6 {
   color: var(--main-text-color)
 }
 .content__text p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 .9rem 0;
   line-height: 1.4
 }
 .content__text p:last-child {

@@ -19,8 +19,5 @@ export const css = () => {
             app.plugins.rename(app.path.dist.build.css.filename),
             app.plugins.rename(app.path.dist.dist.css.filename)
         ))
-        .pipe(app.plugins.if(app.isDev,
-            app.gulp.dest(app.path.dist.build.css.path),
-            app.gulp.dest(app.path.dist.dist.css.path)
-        ));
+        .pipe(app.plugins.destDependOnMode("css"));
 };
