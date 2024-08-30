@@ -20,6 +20,8 @@ export function toggleMenuItems() {
     burgerMenuItems.forEach((item) => {item.onclick = closeMenu});
 }
 
+// pathnames are in django template language
+
 function closeMenu() {
     burgerMenuElement.classList.remove("opened");
     burgerMenuImage.src = "img/burger-menu.svg";
