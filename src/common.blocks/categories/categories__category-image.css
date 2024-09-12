@@ -1,13 +1,12 @@
 .categories__category-image {
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: -1;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .categories__category-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
 }
