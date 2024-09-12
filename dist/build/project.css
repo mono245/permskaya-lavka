@@ -83,7 +83,7 @@ h6 {
   --header-dark-text-color: #291914;
   --header-mobile-menu-opacity: 0.9;
   --header-active-mobile-menu-opacity: 0.8;
-  --category-title-color: #302a23;
+  --category-title-color: #e9d0b6;
   --product-border-color: #cfb19d;
   --product-bg-color: #f4d4b3;
   --product-title-color: #3d251e;
@@ -313,49 +313,48 @@ h6 {
 .categories__body {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit,minmax(270px,1fr))
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  justify-items: center
 }
 .categories__category {
+  position: relative;
   z-index: 3;
   width: 100%;
   max-width: 360px;
   border-radius: 10px;
   overflow: hidden;
-  transition: all .25s linear 0s;
-  border: 4px solid var(--product-border-color);
-  background-color: var(--product-bg-color)
+  transition: all .25s linear 0s
 }
 .categories__category:hover {
   transform: scale(1.025)
 }
 .categories__category-link-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%
 }
 .categories__category-image {
   width: 100%;
-  overflow: hidden;
-  background-color: #fff;
-  aspect-ratio: 16/9
+  height: 100%;
+  position: relative;
+  z-index: -1
 }
-.categories__category-image img,
-.categories__category-image picture {
-  display: inline-block;
+.categories__category-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain
+  object-fit: cover;
+  object-position: center
 }
 .categories__category-title {
-  display: block;
+  position: absolute;
+  z-index: 1;
   color: var(--category-title-color);
+  text-shadow: 0 0 4px #000;
   font-size: 1.625rem;
-  font-weight: 700;
-  text-align: center;
-  padding: .75rem .25rem
-}
-.categories__nothing-found-text {
-  font-size: 1.025rem;
-  color: #424242
+  font-weight: 700
 }
 .products__title {
   font-size: 2rem;
@@ -367,7 +366,8 @@ h6 {
 .products__body {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(220px,1fr))
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  justify-items: center
 }
 .products__item {
   display: flex;
@@ -375,6 +375,7 @@ h6 {
   justify-content: space-between;
   overflow: hidden;
   border-radius: 10px;
+  max-width: 300px;
   width: 100%;
   background-color: var(--product-bg-color);
   border: 4px solid var(--product-border-color)
@@ -382,13 +383,11 @@ h6 {
 .products__item-image {
   width: 100%;
   height: auto;
-  max-height: 120px;
-  background-color: #fff
+  max-height: 120px
 }
 .products__item-image img {
   width: 100%;
-  height: 100%;
-  object-fit: contain
+  height: 100%
 }
 .products__item-title {
   margin: .9375rem 0;
@@ -414,10 +413,6 @@ h6 {
 .products__details-text {
   color: var(--product-details-link-color)
 }
-.products__nothing-found-text {
-  font-size: 1.025rem;
-  color: #424242
-}
 .detailed-product__image {
   margin: 0 40px 0 0;
   width: 35%;
@@ -428,8 +423,7 @@ h6 {
 }
 .detailed-product__image img {
   width: 100%;
-  height: 100%;
-  object-fit: contain
+  height: 100%
 }
 .detailed-product__info {
   max-width: 700px
