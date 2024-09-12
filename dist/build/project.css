@@ -351,6 +351,11 @@ h6 {
   text-align: center;
   padding: .75rem .25rem
 }
+.categories__nothing-found-text {
+  font-size: 1.025rem;
+  color: #424242;
+  justify-self: normal
+}
 .products__title {
   font-size: 2rem;
   font-weight: 700;
@@ -412,7 +417,8 @@ h6 {
 }
 .products__nothing-found-text {
   font-size: 1.025rem;
-  color: #424242
+  color: #424242;
+  justify-self: normal
 }
 .detailed-product__image {
   margin: 0 40px 0 0;
