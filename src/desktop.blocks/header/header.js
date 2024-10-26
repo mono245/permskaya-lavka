@@ -1,9 +1,9 @@
 const headerMenu = document.querySelector(".header__menu");
 const documentName = window.location.pathname.split("/").at(-1);
-// if this is root page, we don't need this script
-if (documentName === "") {
-    throw "stop execution";
-}       
+
+export function isRootPage() {
+    return documentName === "";
+}      
 
 export function markSelectedMenuItem() {
     Array.from(headerMenu.children).forEach(element => {

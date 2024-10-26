@@ -1,7 +1,7 @@
 import {
     burgerMenuButton, toggleMenu, toggleMenuItems  
 } from "./tablet.blocks/header/header.js";
-import { markSelectedMenuItem } from "./desktop.blocks/header/header.js";
+import { markSelectedMenuItem, isRootPage } from "./desktop.blocks/header/header.js";
 
 burgerMenuButton.addEventListener("click", event => {
     event.preventDefault();
@@ -17,4 +17,6 @@ burgerMenuButton.addEventListener("touchstart", event => {
 });
 toggleMenuItems();
 
-markSelectedMenuItem();
+if (!isRootPage()) {
+    markSelectedMenuItem();
+}
